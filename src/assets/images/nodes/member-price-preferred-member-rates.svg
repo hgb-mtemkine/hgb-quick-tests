@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64">
+    <defs>
+        <linearGradient id="a" x1="100%" x2="32.617%" y1="86.237%" y2="31.3%">
+            <stop offset="0%" stop-color="#5B92E0"/>
+            <stop offset="100%" stop-color="#2EB5E2"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <path fill="url(#a)" d="M63 0v64L31.5 43.823 0 64V0z" transform="translate(.4)"/>
+        <text fill="#FFF" font-family="DINNextLTPro-Bold, DIN Next LT Pro" font-size="9" font-weight="bold" transform="translate(.4)">
+            <tspan x="11.507" y="10.8">Preferred </tspan> <tspan x="9.153" y="22.8">Subscriber </tspan> <tspan x="19.782" y="34.8">Rates</tspan>
+        </text>
+    </g>
+</svg>

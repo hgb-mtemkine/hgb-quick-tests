@@ -1,0 +1,89 @@
+@import "~less/variables.less";
+
+
+// TODO: not used (came from A1 mixins.less)
+
+.query-area {
+  background-color: transparent;
+  width: 80% !important;
+  border: none;
+  outline: none;
+  resize: none !important;
+  text-align: center;
+  font-family: @hgbFont-condensed;
+
+  &.expanded {
+    text-align: center;
+  }
+}
+
+.angucomplete {
+  position: relative;
+  .angucomplete-dropdown {
+    position: absolute;
+    width: 100%;
+    z-index: 10000;
+    font-family: @hgbFont-medium;
+
+    .angucomplete-searching {
+      padding: 20px;
+      background: white;
+      color: @hello-blue;
+      border: 1px solid @hello-body-copy;
+      border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 5px;
+
+      &:hover {
+        background: @hello-bg;
+      }
+    }
+
+    .angucomplete-row {
+      background: white;
+      padding: 20px;
+      color: @hello-blue;
+      border-left: 1px solid @hello-body-copy;
+      border-right: 1px solid @hello-body-copy;
+      height: 75px;
+      cursor: pointer;
+
+      &:last-child {
+        border-bottom-right-radius: 5px;
+        border-bottom-left-radius: 5px;
+        border-bottom: 1px solid @hello-body-copy;
+      }
+
+      &:hover {
+        background: @hello-bg;
+      }
+
+      &.angucomplete-selected-row {
+        background: @hello-bg;
+      }
+    }
+  }
+}
+
+.toast-mixin {
+  -webkit-animation-name: toast-animation-example; /* Chrome, Safari, Opera */
+  -webkit-animation-duration: 3s; /* Chrome, Safari, Opera */
+  animation-name: toast-animation-example;
+  animation-duration: 20s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  overflow: hidden;
+}
+
+.btn-change(@color) {
+  background: transparent;
+  border-color: @color;
+  color: @color;
+  margin-top: 5px;
+}
+
+
+.hgb-dropshadow {
+  -webkit-box-shadow: 0px 5px 10px -4px rgba(0,0,0,0.28);
+  -moz-box-shadow: 0px 5px 10px -4px rgba(0,0,0,0.28);
+  box-shadow: 0px 5px 10px -4px rgba(0,0,0,0.28);
+}

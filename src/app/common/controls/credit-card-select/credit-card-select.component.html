@@ -1,0 +1,22 @@
+<button mat-button [matMenuTriggerFor]="menu">
+  <span *ngIf="!selectedCard" class="nothing-selected">Select Payment</span>
+  <span *ngIf="selectedCard" class="card-selected">
+    <img class="credit-card-select-card-icon" [src]="selectedCard.cardtype | creditCardImageFilename">
+    <span class="credit-card-select-card-label ng-binding">ending: {{ selectedCard.last4 }}</span>
+  </span>
+</button>
+<mat-menu #menu="matMenu" yPosition="below" [overlapTrigger]="false" class="credit-card-select-matmenu">
+  <button mat-menu-item (click)="setCCSelection(null)" [hidden]="!selectedCard"><i class="fa fa-times" aria-hidden="true"></i> Remove this payment</button>
+  <button mat-menu-item (click)="onNewCardPressed.emit()"><i class="fa fa-plus-square" aria-hidden="true"></i> Add new card</button>
+  <button mat-menu-item *ngFor="let cc of creditCardList" (click)="setCCSelection(cc)">
+    <img class="credit-card-select-card-icon" [src]="cc.cardtype | creditCardImageFilename">
+    <span class="credit-card-select-card-label ng-binding">ending: {{ cc.last4 }}</span>
+    <span class="credit-card-select-edit-btn" (click)="onEditCardPressed.emit(cc); $event.stopPropagation()">
+      <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+    </span>
+  </button>
+</mat-menu>
+
+<div class="credit-card-select-row ng-scope selected">
+  
+</div>

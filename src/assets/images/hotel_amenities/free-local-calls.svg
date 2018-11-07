@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="34px" height="35px" viewBox="0 0 34 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>326DC282-9AC7-4C0F-ABB0-F0D55A09678C</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Responsive-web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="hotel_details_Amenities_Icons" transform="translate(-56.000000, -1002.000000)">
+            <g id="Free-local-calls-" transform="translate(56.000000, 1002.000000)">
+                <path d="M17,34.0589284 C26.3888407,34.0589284 34,26.4477691 34,17.0589284 C34,7.67008763 26.3888407,0.0589283718 17,0.0589283718 C7.61115925,0.0589283718 0,7.67008763 0,17.0589284 C0,26.4477691 7.61115925,34.0589284 17,34.0589284 Z" id="Oval-36-Copy" fill-opacity="0.12" fill="#888888"></path>
+                <g id="thin-0419_payment_mobile_nfc_apple_pay_cashless" transform="translate(16.706425, 17.065569) rotate(20.000000) translate(-16.706425, -17.065569) translate(7.706425, 8.565569)" stroke="#888888" stroke-width="1.2">
+                    <g id="Group" transform="translate(0.720000, -0.000000)">
+                        <path d="M5.169024,0.847944 L0.8244,5.192496 C0.281088,5.73588 0.281304,6.625008 0.824184,7.167888 L10.048608,16.39224 C10.591848,16.93548 11.480472,16.935264 12.023856,16.39188 L16.36848,12.047256 C16.911864,11.503872 16.91208,10.615248 16.36884,10.072008 L7.144416,0.847728 C6.601464,0.304776 5.712336,0.30456 5.169024,0.847944 L5.169024,0.847944 Z" id="Shape"></path>
+                        <ellipse id="Oval" cx="13.045464" cy="13.069008" rx="0.586656" ry="0.586656"></ellipse>
+                        <rect id="Rectangle-path" transform="translate(8.271344, 8.294797) rotate(45.000000) translate(-8.271344, -8.294797) " x="3.06363398" y="3.82580013" width="10.4154201" height="8.93799428"></rect>
+                        <path d="M14.68944,6.159024 C14.756904,4.105872 13.087512,2.439792 11.0376,2.507112" id="Shape"></path>
+                        <path d="M16.675344,5.943456 C16.741656,2.91456 14.28516,0.454896 11.253168,0.52128" id="Shape"></path>
+                        <path d="M2.481624,11.063088 C2.41416,13.11624 4.083552,14.78232 6.133464,14.715" id="Shape"></path>
+                        <path d="M0.49572,11.278728 C0.429408,14.307624 2.885904,16.767288 5.917896,16.700904" id="Shape"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

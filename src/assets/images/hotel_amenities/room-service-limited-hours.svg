@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="34px" height="35px" viewBox="0 0 34 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>90F7307B-0A96-4C00-94FA-F7EAB18B2643</title>
+    <desc>Created with sketchtool.</desc>
+    <defs></defs>
+    <g id="Responsive-web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="hotel_details_Amenities_Icons" transform="translate(-392.000000, -1098.000000)">
+            <g id="Room-service-(limited-hours)" transform="translate(392.000000, 1098.000000)">
+                <circle id="Oval-36" fill-opacity="0.12" fill="#888888" cx="17" cy="17.0589284" r="17"></circle>
+                <g id="Page-1" transform="translate(8.000000, 13.000000)">
+                    <polygon id="Fill-1" points="10.9471935 5.95744681 9.20525806 7.74468085 6.88267742 10.1276596 3.97945161 7.14893617 4.26977419 5.36170213 5.14074194 3.57446809 5.14074194 2.08510638 4.85041935 1.19148936 6.59235484 1.19148936 6.88267742 2.08510638 7.173 3.87234043 8.33429032 4.46808511 9.78590323 2.9787234 10.656871 1.19148936 13.5600968 1.19148936 12.689129 3.27659574"></polygon>
+                    <polygon id="Fill-2" points="5.43106452 12.8085106 1.36654839 8.63829787 3.39880645 6.55319149 7.46332258 10.7234043"></polygon>
+                    <polygon id="Fill-3" points="0.205374194 10.4256213 3.68924516 14.0000894 5.14056774 12.5104298 1.65669677 8.93625957"></polygon>
+                    <polyline id="Fill-4" points="16.7536452 0 15.3020323 1.19148936 3.10848387 1.19148936 1.65687097 0"></polyline>
+                    <g id="Group-9" transform="translate(0.290323, 0.000000)" stroke="#888888" stroke-width="1.2">
+                        <path d="M0.205258065,0 L17.6246129,0" id="Stroke-5"></path>
+                        <polyline id="Stroke-7" stroke-linecap="round" points="16.4633226 0 15.0117097 1.19148936 2.81816129 1.19148936 1.36654839 0"></polyline>
+                    </g>
+                    <polyline id="Stroke-10" stroke="#888888" stroke-width="1.2" stroke-linecap="round" points="13.5600968 1.19148936 12.689129 3.27659574 10.9471935 5.95744681 9.20525806 7.74468085 6.88267742 10.1276596"></polyline>
+                    <polyline id="Stroke-11" stroke="#888888" stroke-width="1.2" stroke-linecap="round" points="3.97945161 7.14893617 4.26977419 5.36170213 5.14074194 3.57446809 5.14074194 2.08510638 4.85041935 1.19148936"></polyline>
+                    <polyline id="Stroke-12" stroke="#888888" stroke-width="1.2" stroke-linecap="round" points="6.59235484 1.19148936 6.88267742 2.08510638 7.173 3.87234043 8.33429032 4.46808511 9.49558065 4.17021277 10.9471935 2.9787234 12.1084839 1.19148936"></polyline>
+                    <path d="M1.65687097,8.93617021 L0.205258065,10.4255319" id="Stroke-13" stroke="#888888" stroke-width="1.2"></path>
+                    <polygon id="Stroke-15" stroke="#888888" stroke-width="1.2" points="5.43106452 12.8085106 1.36654839 8.63829787 3.39880645 6.55319149 7.46332258 10.7234043"></polygon>
+                    <path d="M5.7213871,10.7234043 L5.14074194,10.1276596" id="Stroke-16" stroke="#888888" stroke-width="1.2" stroke-linecap="round"></path>
+                    <polyline id="Stroke-17" stroke="#888888" stroke-width="1.2" stroke-linecap="round" points="10.656871 1.19148936 9.78590323 2.9787234 8.33429032 4.46808511"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

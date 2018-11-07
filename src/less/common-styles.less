@@ -1,0 +1,117 @@
+// FROM: https://codepen.io/miktemk/pen/oeQGMK
+
+// TODO: these vars have been duplicated, consider passing to wiregrid as mixin method arguments
+@border-color: #aaa;
+@cp-border-style: 1px solid @border-color;
+@cp-cell-padding: 10px;
+
+// ---------- wiregrid ---------------
+.cp-wiregrid-row {
+  border-bottom: @cp-border-style;
+  margin: 0;
+  .cp-wiregrid-cell {
+    padding: @cp-cell-padding;
+    border-right: @cp-border-style;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      border-right: none;
+      padding-right: 0;
+    }
+  }
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+// ---------- covergrid ---------------
+.cp-covergrid-row {
+  border-bottom: @cp-border-style;
+  margin: 0;
+  .cp-covergrid-cell {
+    padding: @cp-cell-padding;
+    border-right: @cp-border-style;
+    &:first-child {
+      border-left: @cp-border-style;
+    }
+  }
+  &:first-child {
+    border-top: @cp-border-style;
+  }
+}
+
+// ---------- tgrid ---------------
+.cp-tgrid-row {
+  border-top: @cp-border-style;
+  margin: 0;
+  .cp-tgrid-cell {
+    padding: @cp-cell-padding;
+    border-right: @cp-border-style;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      border-right: none;
+      padding-right: 0;
+    }
+  }
+}
+
+// ---------- boxygrid ---------------
+.cp-boxygrid-row {
+  margin: 0;
+  .cp-boxygrid-cell {
+    border-right: @cp-border-style;
+    border-bottom: @cp-border-style;
+    border-top: @cp-border-style;
+    margin-bottom: -1px; // NOTE: prevents double borders at overlap
+    padding: @cp-cell-padding;
+    &:first-child {
+      border-left: @cp-border-style;
+    }
+  }
+}
+
+// ---------- Igrid ---------------
+.cp-Igrid-row {
+  border-top: @cp-border-style;
+  margin: 0;
+  .cp-Igrid-cell {
+    padding: @cp-cell-padding;
+    border-right: @cp-border-style;
+    &:first-child {
+      padding-left: 0;
+    }
+    &:last-child {
+      border-right: none;
+      padding-right: 0;
+    }
+  }
+  &:last-child {
+    border-bottom: @cp-border-style;
+  }
+}
+
+//================================================
+
+// FROM https://codepen.io/miktemk/pen/QayWGL
+.flex-group {
+  display: flex;
+  width: 100%;
+  .main-content {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+  }
+  .lhs-addon, .rhs-addon {
+    display: flex;
+  }
+  .flex-content-vcenter {
+    margin: auto 0;
+  }
+  .flex-content-hcenter {
+    width: 100%;
+    text-align: center;
+  }
+}

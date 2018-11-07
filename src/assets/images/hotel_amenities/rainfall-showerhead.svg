@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="34px" height="35px" viewBox="0 0 34 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+    <title>A1C4590E-CE45-4E95-8E8E-F190473BEA3B</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <polygon id="path-1" points="0.915 8.279 0.915 0.365"></polygon>
+        <polygon id="path-3" points="0.106 0.724 0.056 0.426"></polygon>
+        <polygon id="path-5" points="0.888 0.399 0.839 0.101"></polygon>
+        <polygon id="path-7" points="0.615 0.724 0.665 0.426"></polygon>
+        <polygon id="path-9" points="0.833 0.399 0.883 0.101"></polygon>
+    </defs>
+    <g id="Responsive-web" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="hotel_details_Amenities_Icons" transform="translate(-55.000000, -205.000000)">
+            <g id="Rainfall-showerhead" transform="translate(55.000000, 204.000000)">
+                <g id="Group-349" transform="translate(0.000000, 0.973000)">
+                    <path d="M34,17.1982 C34,26.5872 26.389,34.1982 17,34.1982 C7.611,34.1982 0,26.5872 0,17.1982 C0,7.8092 7.611,0.1982 17,0.1982 C26.389,0.1982 34,7.8092 34,17.1982" id="Fill-343" fill="#F0F0F0"></path>
+                    <path d="M21.9136,13.0215 C21.9136,11.3565 20.5536,9.8755 18.8746,9.8755 C17.1966,9.8755 15.8366,11.3565 15.8366,13.0215 L21.9136,13.0215 L21.9136,13.0215 Z" id="Stroke-345" stroke="#888888" stroke-width="1.14" stroke-linecap="round" stroke-linejoin="round"></path>
+                    <path d="M18.9561,9.876 C18.4411,9.193 17.4011,8.552 16.2041,8.552 C13.3801,8.552 12.1811,10.117 12.1811,12.887 L12.1811,25.514" id="Stroke-347" stroke="#888888" stroke-width="1.14" stroke-linecap="round" stroke-linejoin="round"></path>
+                </g>
+                <g id="Group-352" transform="translate(18.000000, 14.973000)">
+                    <path d="M0.915,0.727 L0.915,0.426 L0.915,0.727 Z" id="Fill-350"></path>
+                </g>
+                <path d="M18.9155,15.3988 L18.9155,15.7008" id="Stroke-353" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"></path>
+                <g id="Group-357" transform="translate(18.000000, 16.973000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <g id="Clip-356"></g>
+                    <path d="M0.915,8.279 L0.915,0.365 L0.915,8.279 Z" id="Fill-355" mask="url(#mask-2)"></path>
+                </g>
+                <path d="M18.9155,17.3382 L18.9155,25.2522" id="Stroke-358" stroke="#888888" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.905,2.714"></path>
+                <g id="Group-362" transform="translate(18.000000, 25.973000)">
+                    <path d="M0.915,0.399 L0.915,0.096 L0.915,0.399 Z" id="Fill-360"></path>
+                </g>
+                <path d="M18.9155,26.0697 L18.9155,26.3717" id="Stroke-363" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"></path>
+                <g id="Group-367" transform="translate(20.000000, 14.973000)">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <g id="Clip-366"></g>
+                    <path d="M0.106,0.724 L0.056,0.426 L0.106,0.724 Z" id="Fill-365" mask="url(#mask-4)"></path>
+                </g>
+                <path d="M20.0557,15.3988 L20.1057,15.6968" id="Stroke-368" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M21.702,25.255 L20.38,17.336 L21.702,25.255 Z" id="Fill-370"></path>
+                <path d="M20.3794,17.3353 L21.7014,25.2553" id="Stroke-372" stroke="#888888" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.918,2.754"></path>
+                <g id="Group-376" transform="translate(21.000000, 25.973000)">
+                    <mask id="mask-6" fill="white">
+                        <use xlink:href="#path-5"></use>
+                    </mask>
+                    <g id="Clip-375"></g>
+                    <path d="M0.888,0.399 L0.839,0.101 L0.888,0.399 Z" id="Fill-374" mask="url(#mask-6)"></path>
+                </g>
+                <path d="M21.8384,26.0736 L21.8874,26.3716" id="Stroke-377" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"></path>
+                <g id="Group-381" transform="translate(17.000000, 14.973000)">
+                    <mask id="mask-8" fill="white">
+                        <use xlink:href="#path-7"></use>
+                    </mask>
+                    <g id="Clip-380"></g>
+                    <path d="M0.615,0.724 L0.665,0.426 L0.615,0.724 Z" id="Fill-379" mask="url(#mask-8)"></path>
+                </g>
+                <path d="M17.665,15.3988 L17.615,15.6968" id="Stroke-382" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M16.019,25.255 L17.341,17.336 L16.019,25.255 Z" id="Fill-384"></path>
+                <path d="M17.3413,17.3353 L16.0193,25.2553" id="Stroke-386" stroke="#888888" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="0.918,2.754"></path>
+                <g id="Group-390" transform="translate(15.000000, 25.973000)">
+                    <mask id="mask-10" fill="white">
+                        <use xlink:href="#path-9"></use>
+                    </mask>
+                    <g id="Clip-389"></g>
+                    <path d="M0.833,0.399 L0.883,0.101 L0.833,0.399 Z" id="Fill-388" mask="url(#mask-10)"></path>
+                </g>
+                <path d="M15.8833,26.0736 L15.8333,26.3716" id="Stroke-391" stroke="#888888" stroke-linecap="round" stroke-linejoin="round"></path>
+            </g>
+        </g>
+    </g>
+</svg>

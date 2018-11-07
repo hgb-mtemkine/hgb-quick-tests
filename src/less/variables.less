@@ -1,0 +1,117 @@
+/**
+ * These are the variables used throughout the application. This is where
+ * overwrites that are not specific to components should be maintained.
+ */
+
+ @screen-lg: 1400px;
+
+/**
+ * Typography related.
+ */
+
+@hgbFont-light: 'Din Light', Helvetica, Arial, sans-serif;
+@hgbFont-medium: 'Din Medium', Helvetica, Arial, sans-serif;
+@hgbFont-normal: 'Din Normal', Helvetica, Arial, sans-serif;
+@hgbFont-condensed: 'Din Condensed', Helvetica, Arial, sans-serif;
+@hgbFont-mediumCondensed: 'Din Medium Condensed', Helvetica, Arial, sans-serif;
+@base-font-size: 16px;
+@query-font-size: 36px;
+
+/**
+ * Hello Colors
+ */
+@hello-lilac: #85cddb;
+@hello-light-blue: #069ee0;
+@hello-blue: #005B82;
+@hello-blue2: #035471;
+@hello-blue-bg: #006083;
+@hello-member-blue:#51BAE9;
+@hello-details-nav-blue: #2c7994;
+@hello-fees-hotel:Black;
+@hello-dark-blue: #003D4C;
+@hello-dark-blue-rgba: rgba(0, 61, 76, 0.8);
+@promo-bg: rgba(81, 186, 233, 0.2);
+@promo-color: #2eb5e2;
+@hello-red: #d64136;
+@hello-red2: #ef393b;
+@hello-green: #069906;
+@hello-red-transparent: rgba(214,65,54, 0.2); // LESSON: tool used for converting #x to rgba(x) http://www.color-hex.com/color/d64136
+@hello-light-red: #feaeb9;
+@hello-white: #fff;
+@hello-secondary-disable: #999;
+@hello-secondary-disable-light: #d7d7d7;
+@hello-secondary-grey-text: #777;
+@hello-body-copy: #555;
+@hello-light-grey: #999;
+@hello-light-grey2: #d0d0d0;
+@hello-dark-grey: #7c7c7c;
+@hello-border-grey: #d7d7d7;
+@hello-settings-background:#f7f7f7;
+@room-border-gray: #eeecee;
+@deal-color: #2eb5e2;
+@deal-color-bg: rgba(81, 186, 233, 0.2);
+
+// font colors
+@hello-font-secondary-light: #ADADAD;
+
+
+// background
+@bgImgExternal: url('/assets/images/hgb-external-background2.svg');
+@hello-bg: #f2f2f2;
+@hello-bg-light:#f5f5f5;
+@hello-secondary-bg: #ececec;
+@hello-cards: #ffffff;
+
+@hello-gradient-start: #0A4D6D;
+@hello-gradient-end: #05374D;
+
+/* style guide */
+@hello-border-radius: 4px;
+
+/**
+ * Grid related.
+ */
+@defaultCellHeight: 100px;
+
+
+/**
+ * Totals related.
+ */
+@defaultTotalsHeight: 33px;
+@expandedTotalsHeight: 140px;
+
+// --------------- dimensions -----------------------
+@hgb-page-margin: 15px;
+@width-node-details-panel: 750px;
+
+// --------------- header/footer -----------------------
+@hello-head-first-bar-height: 50px;
+@hello-head-second-bar-height: 40px;
+@checkout-header-height: 55px;
+@checkout-footer-height: 85px;
+@hello-grid-header-height: 50px;
+@hello-footer-height: 180px; //TODO: 1f8f1595: TMP for debugging checkout pages!!! (was 60px)
+@hello-footer-padding: 4px;
+@hello-head-details-panel-bar-height: 40px;
+
+
+// calculated
+@hello-head-collapsed-height: @hello-head-first-bar-height;
+@hello-head-expanded-height: calc(@hello-head-first-bar-height + @hello-head-second-bar-height);
+@hello-height-content-under1header: ~'calc(100vh - @{hello-head-first-bar-height})';
+@hello-height-content-under2headers: ~'calc(100vh - @{hello-head-expanded-height})';
+@hello-height-content-grid: ~'calc(100vh - @{hello-head-first-bar-height} - @{hello-footer-height} - @{hello-grid-header-height})';
+
+@inactive-menu-item-first-row : #CECECE;
+@inactive-menu-item-second-row : #A6A6A6;
+
+@hgb-itinerary-bg-color: #EEEDEE;
+
+@hgb-seat-map-row-gutter: 120px;
+
+@checkbox-size-big: 30px;
+
+// --------------- grid -----------------------
+
+@grid-node-width: 300px;
+@grid-node-height: 250px;
