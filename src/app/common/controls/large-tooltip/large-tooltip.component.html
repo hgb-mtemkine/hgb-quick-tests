@@ -1,6 +1,6 @@
 <div class="hgb-tooltip-root">
-  <div class="hgb-tooltip-con" (click)="popup.hidden = !popup.hidden">
-    <div></div>
+  <!-- <div class="hgb-tooltip-con" (click)="popup.hidden = !popup.hidden"> -->
+  <div class="hgb-tooltip-con" (mouseenter)="popup.hidden = false" (mouseleave)="popup.hidden = true" >
     <ng-content select="[hgb-large-tooltip-parent]"></ng-content>
   </div>
   <div class="hgb-tooltip-popup" #popup [hidden]="true" [ngClass]="anchorClass">
