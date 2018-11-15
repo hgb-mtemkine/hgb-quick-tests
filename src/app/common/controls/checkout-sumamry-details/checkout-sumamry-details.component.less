@@ -1,0 +1,141 @@
+@import "~less/variables.less";
+
+:host {
+  @color_1: #000;
+  @color_2: #fff;
+  @color_3: #999;
+  @color_4: #D64136;
+  @color_6: #575757;
+  @color_7: #d3d3d3;
+  @font_family_1: 'Din Normal',Helvetica,Arial,sans-serif;
+  @font_family_2: 'Din Light',Helvetica,Arial,sans-serif;
+  @font_family_3: 'Din Medium',Helvetica,Arial,sans-serif;
+
+  img {
+    border: 0;
+    vertical-align: middle;
+  }
+  .checkout-summary-item-pricing {
+    text-align: right;
+  }
+  .checkout-summary-traveller-header {
+    color: @color_2;
+    font-family: @font_family_1;
+    font-size: 18px;
+    background-color: @hello-blue2;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  .checkout-summary-detail-section {
+    padding: 15px;
+    overflow-y: auto;
+  }
+  .checkout-summary-item {
+    border-bottom: 1px solid #E1E1E1;
+    font-family: @font_family_2;
+    font-size: 14px;
+  }
+  .checkout-summary-item-field-label {
+    font-size: 14px;
+  }
+  .checkout-summary {
+    .estimated-usd {
+      color: @color_3;
+    }
+    .checkout-traveller-footer-user-amount {
+      color: @color_4;
+      font-family: @font_family_3;
+    }
+  }
+  .checkout-summary-item-row {
+    padding-top: 6px;
+    padding-bottom: 6px;
+    .checkout-summary-column.left {
+      padding-right: 4px;
+    }
+    .checkout-summary-column.right {
+      padding-left: 4px;
+    }
+  }
+  .checkout-summary-card-details {
+    font-family: @font_family_2;
+    .checkout-summary-card-icon {
+      height: 24px;
+    }
+  }
+  .checkout-summary-traveller-footer {
+    text-align: right;
+    font-size: 16px;
+    margin-bottom: 10px;
+    padding: 10px 2px 10px 15px;
+  }
+  .itinerary-item-summary-header {
+    font-family: @font_family_1;
+    font-size: 16px;
+    color: @hello-dark-blue;
+  }
+  .itinerary-item-summary-field {
+    font-family: @font_family_2;
+    font-size: 14px;
+    color: @color_6;
+  }
+  .itinerary-item-summary-flight {
+    font-family: @font_family_3;
+  }
+  .summary-item-price-and-more-x {
+    color: @hello-dark-blue;
+    .summary-item-price-and-more-inner {
+      width: 100%;
+      display: inline-block;
+      text-align: right;
+      .summary-item-more-sub {
+        font-size: 10px;
+        font-style: italic;
+      }
+    }
+    .total-con {
+      display: inline-block;
+      border-top: 1px solid @hello-dark-blue;
+    }
+    .summary-item-total {
+      text-align: right;
+      color: @hello-dark-blue;
+      font-family: @font_family_1;
+      font-size: 16px;
+    }
+    .price-and-more-row.unavailable {
+      .summary-item-price {
+        text-decoration: line-through;
+        color: @color_7;
+      }
+    }
+    .price-and-more-row {
+      .summary-item-tax-label {
+        font-size: 13px;
+      }
+    }
+  }
+  .summary-item-price-and-more-x.summery {
+    text-align: right;
+  }
+  @media print {
+    img {
+      page-break-inside: avoid;
+      max-width: 100% !important;
+    }
+    * {
+      text-shadow: none !important;
+      color: @color_1 !important;
+      background: 0 0 !important;
+      box-shadow: none !important;
+    }
+  }
+  @media (max-width:992px) {
+    .checkout-page-summary-container {
+      .checkout-summary-detail-section {
+        display: none;
+      }
+    }
+  }
+
+}

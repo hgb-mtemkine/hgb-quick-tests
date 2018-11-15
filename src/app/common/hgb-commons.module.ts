@@ -5,6 +5,7 @@ import { CreditCardSelectComponent } from './controls/credit-card-select/credit-
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import * as Mat from '@angular/material';
 import { CreditCardImageFilenamePipe } from './pipes/cedit-card-name.pipe';
+import { CheckoutSumamryDetailsComponent } from './controls/checkout-sumamry-details/checkout-sumamry-details.component';
 
 @NgModule({
   imports: [
@@ -16,11 +17,13 @@ import { CreditCardImageFilenamePipe } from './pipes/cedit-card-name.pipe';
   declarations: [
     LargeTooltipComponent,
     CreditCardSelectComponent,
-    CreditCardImageFilenamePipe
+    CreditCardImageFilenamePipe,
+    CheckoutSumamryDetailsComponent,
   ],
   exports: [
     LargeTooltipComponent,
-    CreditCardSelectComponent
+    CreditCardSelectComponent,
+    CheckoutSumamryDetailsComponent
   ],
 })
 export class CommonComponentsModule { }

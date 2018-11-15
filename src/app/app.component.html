@@ -13,7 +13,7 @@
       </div>
       <div hgb-large-tooltip-popup>
         <div style="border: 1px solid #ccc; padding: 10px;">
-          <div>popup!!!!!</div>
+          <div *ngIf="true">popup!!!!!</div>
           <ul>
             <li>asdasd asdsad</li>
             <li>asdasd asdsad</li>
@@ -29,6 +29,12 @@
       [creditCardList]="creditCardList"
     ></hgb-credit-card-select>
   </li>
-
+  <li>
+    <div class="container-tight">
+      <hgb-checkout-sumamry-details></hgb-checkout-sumamry-details>
+    </div>
+  </li>
+  <li>asdasd</li>
+  <li>asdasd</li>
 </ul>
 
