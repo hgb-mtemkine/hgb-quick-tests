@@ -1,7 +1,7 @@
 <div class="checkout-summary-detail-section" ng-switch="displayMode" ui-size="setDim($width, $height, $viewportWidth, $viewportHeight)"
   ng-class="displayMode" ng-style="{'height':(displayMode === 'reviewChanges') ? 'auto' : (dimensions.$viewportHeight - 245)}"
   style="height: 693px;">
-  <div *ngFor="let pax of vm.pax" ng-repeat="travellerSummary in tripSummary.summaryobjects | filter : doesUserHaveCard  | orderBy : orderTravellers">
+  <div *ngFor="let pax of vm?.pax" ng-repeat="travellerSummary in tripSummary.summaryobjects | filter : doesUserHaveCard  | orderBy : orderTravellers">
     <div class="checkout-summary-traveller-header">
       <span class="checkout-summary-traveller-header-text">{{ pax.paxName }} ({{ pax.paxSeniority }})</span>
     </div>
@@ -16,9 +16,12 @@
         <div class="col-5">
           <div class="itinerary-item-summary" ng-class="{inactive:isInactive}" ng-switch="type">
             <div ng-switch-default="">
-              <div class="itinerary-item-summary-header">American Airlines, Flight: <span class="itinerary-item-summary-flight">AA
-                  2569</span></div>
-              <div class="itinerary-item-summary-field">Toronto (YYZ) - Miami (MIA)</div>
+              <div class="itinerary-item-summary-header">{{ item.flight.airlineName }}</div>
+              <div class="itinerary-item-summary-header">
+                <span>Flight: </span>
+                <span class="flight-number">{{ item.flight.flightNumber }}</span>
+              </div>
+              <div class="itinerary-item-summary-field">{{ item.flight.from }} - {{ item.flight.to }}</div>
               <div class="itinerary-item-summary-field">Economy Class</div>
               <div class="itinerary-item-summary-field">Departing: Nov 6 2018, 5:45PM</div>
               <div class="itinerary-item-summary-field">Arriving: Nov 6 2018, 9:11PM</div>
@@ -27,21 +30,10 @@
         </div>
         <!-- </itinerary-item-summary> -->
         <div ng-if="$first &amp;&amp; !itemSummary.$detail.isReturnFlight" class="col-7 checkout-summary-item-pricing checkout-summary-column right">
-          <!-- <traveller-summery-updated-pricing display-mode="summery" class="summery-pricing ng-isolate-scope"
-              summary-item="itemSummary" waiting-for-pricing="tripSummary.waitingForFlightUpdatePricing"> -->
-          <div class="summary-item-price-and-more-x summery" ng-class="displayMode">
-            <div class="summary-item-price-and-more-inner" ng-if="waitingForPricing || !summaryItem.directSell.isavailable">
-              <div class="price-and-more-row unavailable" ng-class="{'unavailable': !waitingForPricing &amp;&amp; (summaryItem.directSell &amp;&amp; !summaryItem.directSell.isavailable)}">
-                <div><span class="summary-item-tax-label">Base fare: </span><span class="summary-item-price "
-                    ng-bind-html="summaryItem.price - summaryItem.tax | hgb_currency">$139.00 CAD</span></div>
-                <div><span class="summary-item-tax-label">Taxes, fees and charges: </span><span class="summary-item-price "
-                    ng-bind-html="summaryItem.tax | hgb_currency">$93.41 CAD</span></div>
-                <div><span class="summary-item-tax-label">Total :</span> <span class="summary-item-price summary-item-total "
-                    ng-bind-html="summaryItem.price | hgb_currency">$232.41 CAD</span></div>
-              </div>
-            </div>
-          </div>
-          <!-- </traveller-summery-updated-pricing> -->
+          <hgb-traveller-summary-updated-pricing
+            [vm]="item.pricing"
+            [itemType]="item.type"
+          ></hgb-traveller-summary-updated-pricing>
           <div class="checkout-summary-card-details">
             <img class="checkout-summary-card-icon" src="/assets/images/creditcards/amex.png"> ending: 1000
           </div>
@@ -65,33 +57,10 @@
         </div>
         <!-- </itinerary-item-summary> -->
         <div class="col-7 checkout-summary-item-pricing checkout-summary-column right">
-          <!-- <traveller-summery-updated-pricing waiting-for-pricing="tripSummary.waitingForFlightUpdatePricing" class="summery-pricing ng-isolate-scope" display-mode="summery" summary-item="itemSummary"> -->
-          <div class="summary-item-price-and-more-x summery" ng-class="displayMode">
-            <div class="summary-item-price-and-more-inner" ng-if="!waitingForPricing &amp;&amp; summaryItem.directSell.isavailable">
-              <div ng-if="summaryItem.type == 'hotel'">
-                <div class="summary-item-more">
-                  <span>1 Night:</span>
-                  <span class="estimated-usd " ng-if="summaryItem.totalbeforetaxusd > 0">($179.00
-                    USD)</span>
-                  <span class="summary-item-price " ng-bind-html="summaryItem.totalbeforetax | hgb_currency">$233.65
-                    CAD</span></div>
-                <div class="summary-item-more-sub">(<span>Nightly :
-                    <span class="estimated-usd " ng-if="summaryItem.$detail.getPrimaryRoom().averagerateusd > 0">($179.00
-                      USD)</span>
-                  </span><span ng-bind-html="summaryItem.$detail.getPrimaryRoom().averagerate | hgb_currency" class="">$233.65
-                    CAD</span>)</div>
-                <div><span class="checkout-summary-item-field-label">Taxes, Fees, Other Charges : </span><span ng-if="summaryItem.surchargetotal === 0">$0.00</span>
-                </div>
-              </div>
-              <div class="total-con price-and-more-row">
-                <div><span class="summary-item-price-label">Total :</span> <span class="summary-item-total " ng-class="{updated:summaryItem.isDirectSellDiff}"
-                    ng-bind-html="summaryItem.price | hgb_currency">$233.65
-                    CAD</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- </traveller-summery-updated-pricing> -->
+          <hgb-traveller-summary-updated-pricing
+            [vm]="item.pricing"
+            [itemType]="item.type"
+          ></hgb-traveller-summary-updated-pricing>
           <div class="checkout-summary-card-details">
             <img class="checkout-summary-card-icon" src="/assets/images/creditcards/amex.png"> ending: 1000
           </div>

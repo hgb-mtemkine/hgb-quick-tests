@@ -1,0 +1,95 @@
+<!-- <traveller-summary-updated-pricing display-mode="summary" class="summary-pricing ng-isolate-scope"
+              summary-item="itemSummary" waiting-for-pricing="tripSummary.waitingForFlightUpdatePricing"> -->
+<div class="summary-item-price-and-more-x summary">
+  <div class="summary-item-price-and-more-inner" ng-if="waitingForPricing || !summaryItem.directSell.isavailable">
+    <div *ngIf="itemType == ItineraryNodeType.Flight">
+      <div class="price-and-more-row unavailable" ng-class="{'unavailable': !waitingForPricing &amp;&amp; (summaryItem.directSell &amp;&amp; !summaryItem.directSell.isavailable)}">
+        <div>
+          <span class="summary-item-tax-label">Base fare: </span>
+          <span class="summary-item-price">{{ vm.price - vm.tax | hgb_currency }}</span>
+        </div>
+        <div>
+          <span class="summary-item-tax-label">Taxes, fees and charges: </span>
+          <span class="summary-item-price">{{ vm.tax | hgb_currency }}</span>
+        </div>
+        <div>
+          <span class="summary-item-tax-label">Total: </span>
+          <span class="summary-item-price summary-item-total">{{ vm.price | hgb_currency }}</span>
+        </div>
+      </div>
+    </div>
+    <div *ngIf="itemType == ItineraryNodeType.Hotel">
+      <div class="summary-item-more">
+        <span>1 Night:</span>
+        <span class="estimated-usd" ng-if="summaryItem.totalbeforetaxusd > 0">{{ vm.totalBeforeTaxUSD | hgb_currency }}</span>
+      <span class="summary-item-price">{{ vm.totalBeforeTax | hgb_currency }}</span>
+      </div>
+    </div>
+    <div *ngIf="vm.primaryRoomAverageRate" class="summary-item-more-sub">
+      <span>(Nightly: </span>
+      <span class="estimated-usd">{{ vm.primaryRoomAverageRateUSD | hgb_currency }}</span>
+      <span> / </span>
+      <span>{{ vm.primaryRoomAverageRate | hgb_currency }}</span>
+      <span>)</span>
+    </div>
+    <div>
+      <span class="checkout-summary-item-field-label">Taxes, Fees, Other Charges: </span>
+      <span>{{ vm.surchargeTotal }}</span>
+    </div>
+  </div>
+  <div class="price-and-more-row">
+    <div class="total-con">
+      <span class="summary-item-price-label">Total: </span>
+      <span class="summary-item-total" ng-class="{updated:summaryItem.isDirectSellDiff}">{{vm.price | hgb_currency}}</span>
+    </div>
+  </div>
+  <div *ngIf="itemType == ItineraryNodeType.Hotel" class="price-and-more-row">
+    <hgb-large-tooltip anchor="right">
+      <div hgb-large-tooltip-parent>
+        <div class="price-and-more-row total-tax-con" ng-if="displayMode == 'details' &amp;&amp; summaryItem.feescollectedbyhoteltotal > 0">
+          <span class="inner-tax-con" ng-click="taxbreakdownvisible = !taxbreakdownvisible">
+            <i class="tax-breakdown-popover-info fa fa-info-circle"></i>
+            <span class="summary-item-tax-label">Due at hotel: </span>
+            <span>{{ vm.feesCollectedByHotelTotal | hgb_currency }}</span>
+          </span>
+        </div>
+      </div>
+      <div hgb-large-tooltip-popup>
+        <div class="tax-breakdown-con">
+          <div class="traveller-summery-tax-breakdown-con">
+            <div class="tax-breakdown-head">Tax Breakdown</div>
+            <div *ngFor="let taxItem of vm.taxBreakdown" class="tax-breakdown-row" ng-repeat="(key, value) in taxBreakdownData">
+              <span class="tax-breakdown-title">{{ taxItem.label | titlecase }}</span>
+              <span class="tax-breakdown-value">{{ taxItem.price | hgb_currency }}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </hgb-large-tooltip>
+  </div>
+</div>
+
+<!-- <div class="summary-item-price-and-more-x summary" >
+  <div class="summary-item-price-and-more-inner" ng-if="!waitingForPricing &amp;&amp; summaryItem.directSell.isavailable">
+    <div ng-if="summaryItem.type == 'hotel'">
+      <div class="summary-item-more">
+        <span>1 Night:</span>
+        <span class="estimated-usd " ng-if="summaryItem.totalbeforetaxusd > 0">($179.00 USD)</span>
+        <span class="summary-item-price" ng-bind-html="summaryItem.totalbeforetax | hgb_currency">$233.65 CAD</span>
+      </div>
+      <div class="summary-item-more-sub">(<span>Nightly :
+          <span class="estimated-usd " ng-if="summaryItem.$detail.getPrimaryRoom().averagerateusd > 0">($179.00
+            USD)</span>
+        </span><span ng-bind-html="summaryItem.$detail.getPrimaryRoom().averagerate | hgb_currency" >$233.65
+          CAD</span>)</div>
+      <div><span class="checkout-summary-item-field-label">Taxes, Fees, Other Charges : </span><span ng-if="summaryItem.surchargetotal === 0">$0.00</span>
+      </div>
+    </div>
+    <div class="total-con price-and-more-row">
+      <div><span class="summary-item-price-label">Total :</span> <span class="summary-item-total " ng-class="{updated:summaryItem.isDirectSellDiff}"
+          ng-bind-html="summaryItem.price | hgb_currency">$233.65
+          CAD</span>
+      </div>
+    </div>
+  </div>
+</div> -->
