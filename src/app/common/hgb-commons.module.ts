@@ -8,6 +8,7 @@ import { CreditCardImageFilenamePipe } from './pipes/cedit-card-name.pipe';
 import { CheckoutSummaryDetailsComponent } from './controls/checkout-summary-details/checkout-summary-details.component';
 import { TravellerSummaryUpdatedPricingComponent } from './controls/traveller-summary-updated-pricing/traveller-summary-updated-pricing.component';
 import { Pipe_hgb_currency } from './pipes/zzz-unimplemented-pipes';
+import { DebugJsonComponent } from './controls/debug-json/debug-json.component';
 
 @NgModule({
   imports: [
@@ -24,11 +25,13 @@ import { Pipe_hgb_currency } from './pipes/zzz-unimplemented-pipes';
     CreditCardSelectComponent,
     CheckoutSummaryDetailsComponent,
     TravellerSummaryUpdatedPricingComponent,
+    DebugJsonComponent,
   ],
   exports: [
     LargeTooltipComponent,
     CreditCardSelectComponent,
-    CheckoutSummaryDetailsComponent
+    CheckoutSummaryDetailsComponent,
+    DebugJsonComponent,
   ],
 })
 export class CommonComponentsModule { }
