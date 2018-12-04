@@ -1,40 +1,295 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-</div>
-<h2>Currently working on: </h2>
-<ul>
-  <li><hgb-debug-json [vm]="creditCardList"></hgb-debug-json></li>
-  <li>
-    <hgb-large-tooltip anchor="right">
-      <div hgb-large-tooltip-parent>
-        parent with long long long long long long long long long
-      </div>
-      <div hgb-large-tooltip-popup>
-        <div style="border: 1px solid #ccc; padding: 10px;">
-          <div *ngIf="true">popup!!!!!</div>
-          <ul>
-            <li>asdasd asdsad</li>
-            <li>asdasd asdsad</li>
-            <li>asdasd asdsad</li>
-            <li>asdasd asdsad</li>
-          </ul>
-        </div>
-      </div>
-    </hgb-large-tooltip>
-  </li>
-  <li>
-    <hgb-credit-card-select
-      [creditCardList]="creditCardList"
-    ></hgb-credit-card-select>
-  </li>
-  <li>
-    <div class="container-tight">
-      <hgb-checkout-summary-details></hgb-checkout-summary-details>
-    </div>
-  </li>
-  <li>asdasd</li>
-</ul>
+<div class="container" stickyRoot>
+  <section class="intro">
 
+    <h1>Multiple Sticky Titles with CSS and JS</h1>
+    <p>ashdjh hdjksahd sahdjk sahdsa dhakjs dhsajd hsajd sahjkd sahd ksajhd sajkhd sajk</p>
+  
+  </section>
+  
+  <div class="followMeBar" stickyHeader>A</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="followMeBar" stickyHeader>B</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="followMeBar" stickyHeader>C</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="followMeBar" stickyHeader>D</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="followMeBar" stickyHeader>E</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="followMeBar" stickyHeader>F</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="followMeBar" stickyHeader>G</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="followMeBar" stickyHeader>H</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="followMeBar" stickyHeader>I</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="followMeBar" stickyHeader>J</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="followMeBar" stickyHeader>K</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="followMeBar" stickyHeader>L</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="followMeBar" stickyHeader>M</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="followMeBar" stickyHeader>N</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="followMeBar" stickyHeader>O</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="followMeBar" stickyHeader>P</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="followMeBar" stickyHeader>Q</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="followMeBar" stickyHeader>R</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="followMeBar" stickyHeader>S</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="followMeBar" stickyHeader>T</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="followMeBar" stickyHeader>U</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="followMeBar" stickyHeader>V</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="followMeBar" stickyHeader>W</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="followMeBar" stickyHeader>X</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="followMeBar" stickyHeader>Y</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="followMeBar" stickyHeader>Z</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+  <div class="item">item</div>
+</div>
